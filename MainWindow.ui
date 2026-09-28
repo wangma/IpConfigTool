@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>900</width><height>620</height></rect>
+  </property>
+  <property name="windowTitle">
+   <string>IP Configuration Tool (NIC + Camera)</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabs">
+      <property name="currentIndex"><number>0</number></property>
+      <widget class="NetworkCardTab" name="networkCardTab">
+       <attribute name="title"><string>Network Card</string></attribute>
+      </widget>
+      <widget class="CameraTab" name="cameraTab">
+       <attribute name="title"><string>Camera (Aravis)</string></attribute>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>NetworkCardTab</class>
+   <extends>QWidget</extends>
+   <header>NetworkCardTab.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CameraTab</class>
+   <extends>QWidget</extends>
+   <header>CameraTab.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
